@@ -1,3 +1,3 @@
 # Bootcamp
 
-## This repository have some examples to HTML, CSS and Javascript
+##  There is have some examples to HTML, CSS and Javascript
