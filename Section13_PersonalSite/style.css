@@ -37,7 +37,8 @@ a {
     background-color: #1F6E8C;
     display: flex;
     align-items: center;
-    padding: 15px 200px;
+    gap: 60px;
+    padding: 15px 17%; 
 
 }
 
@@ -49,7 +50,7 @@ a {
     padding: 15px;
     
 }
-img {
+#photo > img {
     border-radius: 50%;
     width: 200px;
 }
@@ -57,6 +58,53 @@ img {
 #description {
     color: aliceblue;
     font-size: 18px;
+}
+
+/* 3 color 2E8A99 */
+/* color 4 84A7A1 */
+
+.Projects {
+    display: flex;
+    flex-direction: column;
+    background-color: #2E8A99;
+    color: aliceblue;
+    align-items: center;
+}
+.cont_projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 20px;
+}
+
+.sub_cont_pro > #img_1 {
+    height: 200px;
+    border-radius: 10%;
+}
+.sub_cont_pro a > #img_2 {
+    border-radius: 10%;
+    width: 380px;
+    height: 200px;
+}
+
+.sub_cont_pro > p {
+    width: 200px;
+}
+
+.sub_cont_pro > img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.Footer {
+    display: flex;
+    background-color: #84A7A1;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
 }
 
 
@@ -78,10 +126,13 @@ img {
 
     .hero {
         padding: 15px 20px; 
-        
+        gap: 10px;
     }
     #description {
         font-size: 13px;
+    }
+    .cont_projects {
+        grid-template-columns: 1fr; /* o más columnas, según sea necesario */
     }
 
 }
