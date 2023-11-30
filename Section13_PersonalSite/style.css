@@ -1,20 +1,20 @@
-body {
+body, html{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    width: 100vw;
     min-height: 100vh;
 }
+
 
 .header {
     background-color: #0E2954;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 18%; 
+    padding: 15px 20%; 
 }
 
 #name {
@@ -25,7 +25,9 @@ body {
 #values > ul {
     list-style-type: none;
     display: flex;
-    gap: 11px;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
 }
 
 a {
@@ -38,7 +40,7 @@ a {
     display: flex;
     align-items: center;
     gap: 60px;
-    padding: 15px 17%; 
+    padding: 25px 20%; 
 
 }
 
@@ -60,8 +62,6 @@ a {
     font-size: 18px;
 }
 
-/* 3 color 2E8A99 */
-/* color 4 84A7A1 */
 
 .Projects {
     display: flex;
@@ -69,26 +69,31 @@ a {
     background-color: #2E8A99;
     color: aliceblue;
     align-items: center;
+    padding-top: 20px;  
+    
 }
 .cont_projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     padding: 20px;
+    
 }
 
 .sub_cont_pro > #img_1 {
-    height: 200px;
-    border-radius: 10%;
+    height: 250px;
+    border-radius: 15%;
 }
 .sub_cont_pro a > #img_2 {
-    border-radius: 10%;
+    border-radius: 15%;
+    height: 250px;
     width: 380px;
-    height: 200px;
+    
 }
 
 .sub_cont_pro > p {
     width: 200px;
+    font-size: 18px;
 }
 
 .sub_cont_pro > img {
@@ -99,14 +104,30 @@ a {
 
 .Footer {
     display: flex;
+    flex-direction: column;
     background-color: #84A7A1;
     color: aliceblue;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    
 }
 
+.Footer #values ul li > a {
+    color: #11999e; 
+}
+
+.Footer > #values {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #11999e;
+}
+
+.Footer div > footer {
+    padding: 20px;
+}
 
 /* Responsividad para móviles */
 @media (max-width: 768px) {
@@ -132,7 +153,7 @@ a {
         font-size: 13px;
     }
     .cont_projects {
-        grid-template-columns: 1fr; /* o más columnas, según sea necesario */
+        grid-template-columns: 1fr; 
     }
 
 }
